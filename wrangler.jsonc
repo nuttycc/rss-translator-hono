@@ -3,6 +3,12 @@
   "name": "rss-translator-hono",
   "main": "src/index.ts",
   "compatibility_date": "2025-03-17",
+  "routes": [
+    {
+      "pattern": "rss.bingsun.xyz",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "public",
     "binding": "ASSETS"
@@ -11,6 +17,8 @@
     "dev": {
       "vars": {
         "ENVIRONMENT": "dev",
+        "PROVIDER": "mistral",
+        "MODEL": "mistral-small-latest"
       },
       "kv_namespaces": [
         {

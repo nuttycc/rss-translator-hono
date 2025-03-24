@@ -8,11 +8,13 @@
     "lint": "bun run oxlint"
   },
   "dependencies": {
+    "@ai-sdk/cohere": "^1.2.0",
     "@ai-sdk/mistral": "^1.1.18",
     "@types/debug": "^4.1.12",
     "ai": "^4.1.63",
     "fast-xml-parser": "^5.0.9",
     "hono": "^4.7.4",
+    "openai": "^4.89.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {

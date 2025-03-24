@@ -22,13 +22,15 @@ export class MultiFeedService {
   private assets: any; // Cloudflare Workers assets binding
   private requestUrl: string;
   private provider: string;
+  private model: string;
   private apiKey: string;
 
-  constructor(cache: Cache, assets: any, requestUrl: string, provider?: string, apiKey?: string) {
+  constructor(cache: Cache, assets: any, requestUrl: string, provider?: string, model?: string, apiKey?: string) {
     this.cache = cache;
     this.feedServices = new Map();
     this.configKey = 'feeds:config';
     this.provider = provider || "";
+    this.model = model || "";
     this.apiKey = apiKey || "";
     this.assets = assets;
     this.requestUrl = requestUrl;
@@ -51,6 +53,7 @@ export class MultiFeedService {
           this.cacheTtl,
           this.staleTtl,
           this.provider,
+          this.model,
           this.apiKey
         );
         

@@ -24,6 +24,7 @@ export class FeedService {
   private cacheTtl: number;
   private staleTtl: number;
   private provider: string;
+  private model: string;
   private apiKey: string;
 
   defaultProcessor: FeedProcessor = {
@@ -31,7 +32,7 @@ export class FeedService {
       return await fetchFeed(this.feed.url);
     },
     translateContent: async (content: RSSXMLString) => {
-      return await translateFeedTitles(content, this.provider, this.apiKey);
+      return await translateFeedTitles(content, this.provider, this.model, this.apiKey);
     }
   }
 
@@ -42,6 +43,7 @@ export class FeedService {
     cacheTtl: number, 
     staleTtl: number,  
     provider: string,
+    model: string,
     apiKey: string,
     processor: FeedProcessor = this.defaultProcessor,
   ) {
@@ -52,6 +54,7 @@ export class FeedService {
     this.cacheTtl = cacheTtl;
     this.staleTtl = staleTtl;
     this.provider = provider;
+    this.model = model;
     this.apiKey = apiKey;
     feedServiceLogger.debug(`FeedService constructed with cacheKey: ${this.cacheKey}, cacheTtl: ${this.cacheTtl}, staleTtl: ${this.staleTtl}`);
   }

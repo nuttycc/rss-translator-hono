@@ -17,7 +17,8 @@ interface FeedsConfig {
 type Bindings = {
   ENVIRONMENT: string;
   PROVIDER: string;
-  MISTRAL_API_KEY: string;
+  MODEL: string;
+  API_KEY: string;
   RSS_CACHE: KVNamespace;
   ASSETS: {
     fetch: (path: string) => Promise<Response>;
@@ -42,7 +43,7 @@ app.use('*', async (c, next) => {
 
   if (!cache) {
     cache = new Cache(c.env.RSS_CACHE, c.env);
-    multiFeedService = new MultiFeedService(cache, c.env.ASSETS, c.req.url, c.env.PROVIDER, c.env.MISTRAL_API_KEY);
+    multiFeedService = new MultiFeedService(cache, c.env.ASSETS, c.req.url, c.env.PROVIDER, c.env.MODEL, c.env.API_KEY);
     await multiFeedService.initialize()
   } else {
     logger.debug('🚀 Cache already initialized');

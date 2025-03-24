@@ -1,38 +1,33 @@
 import { XMLBuilder, XMLParser } from "fast-xml-parser";
-import { getTranslation } from "./mistral";
+import { getTranslation } from "./ai";
 import { createLogger } from "../util/logger";
 
 const logger = createLogger('[Translator]');
 
 export type RSSXMLString = string;
 
-export function translateTitles(
+export async function translateTitles(
   titles: string[],
   provider: string,
+  model: string,
   apiKey: string
 ) {
 
-  if (!provider || !apiKey) {
-    logger.error('Provider or API key not provided');
-    throw new Error('Provider or API key not provided');
+  if (!provider || !apiKey || !model) {
+    logger.error('Provider or API key or model not provided');
+    throw new Error('Provider or API key or model not provided');
   }
 
   logger.debug(`Translating titles with provider: ${provider}`);
-  switch (provider) {
-    case "mistral":
-      logger.debug("Using Mistral for translation");
-      return getTranslation(titles, apiKey);
-    default:
-      logger.error(`Provider ${provider} not supported`);
-      throw new Error(`Provider ${provider} not supported`);
-  }
+  const translatedTitles = await getTranslation(titles, provider, model, apiKey);
+  return translatedTitles;
 }
 
-export async function translateFeedTitles(xmlString: RSSXMLString, provider: string, apiKey: string): Promise<RSSXMLString> {
+export async function translateFeedTitles(xmlString: RSSXMLString, provider: string, model: string, apiKey: string): Promise<RSSXMLString> {
 
-  if (!provider || !apiKey) {
-    logger.error('Provider or API key not provided');
-    throw new Error('Provider or API key not provided, please check your configuration');
+  if (!provider || !apiKey || !model) {
+    logger.error('Provider or API key or model not provided');
+    throw new Error('Provider or API key or model not provided, please check your configuration');
   }
 
   logger.log('Translating feed titles');
@@ -77,7 +72,7 @@ export async function translateFeedTitles(xmlString: RSSXMLString, provider: str
     });
 
     logger.debug(`Extracted titles: ${titles.length}`);
-    const translatedTitles = await translateTitles(titles, provider, apiKey);
+    const translatedTitles = await translateTitles(titles, provider, model, apiKey);
     
     // Replace titles with translated ones
     logger.debug('Replacing titles with translated ones');
