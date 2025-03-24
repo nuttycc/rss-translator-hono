@@ -29,6 +29,12 @@ export function translateTitles(
 }
 
 export async function translateFeedTitles(xmlString: RSSXMLString, provider: string, apiKey: string): Promise<RSSXMLString> {
+
+  if (!provider || !apiKey) {
+    logger.error('Provider or API key not provided');
+    throw new Error('Provider or API key not provided, please check your configuration');
+  }
+
   logger.log('Translating feed titles');
   logger.debug(`XML string length: ${xmlString.length}`);
   try {
