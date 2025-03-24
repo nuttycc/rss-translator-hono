@@ -19,6 +19,10 @@
           "preview_id": "1c667ff76dc44e6fa17e303d271bc882" 
         }
       ],
+      "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1
+      },
     },
     "prod": {
       "vars": {

@@ -65,7 +65,7 @@ app.get('/feeds/:feed', async (c) => {
     if (error instanceof Error && error.message.includes('Feed not found')) {
       return c.json({ error: 'Feed not found' }, 404);
     }
-    return c.json({ error: 'Failed to process feed' }, 500);
+    return c.json({ error: error instanceof Error ? error.message : 'Unknown error' }, 500);
   }
 })
 
