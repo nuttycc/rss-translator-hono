@@ -1,0 +1,24 @@
+{
+    "feeds": [
+        {
+            "name": "HackerNewsFrontPage",
+            "url": "https://hnrss.org/frontpage"
+        },
+        {
+            "name": "HackerNewsNewest",
+            "url": "https://hnrss.org/newest"
+        },
+        {
+            "name": "HackerNewsBestComments",
+            "url": "https://hnrss.org/bestcomments"
+        },
+        {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/feed/?"
+        },
+        {
+            "name": "TheVerge",
+            "url": "https://www.theverge.com/rss/index.xml"
+        }
+    ]
+}

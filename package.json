@@ -1,0 +1,26 @@
+{
+  "name": "rss-translator-hono",
+  "version": "1.0.0",
+  "packageManager": "bun@1.2.5",
+  "scripts": {
+    "dev": "bun run wrangler dev --env dev",
+    "deploy": "bun run wrangler deploy --env dev --minify",
+    "lint": "bun run oxlint"
+  },
+  "dependencies": {
+    "@ai-sdk/mistral": "^1.1.18",
+    "@types/debug": "^4.1.12",
+    "ai": "^4.1.63",
+    "fast-xml-parser": "^5.0.9",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "oxlint": "^0.16.2",
+    "wrangler": "4.3.0"
+  },
+  "lint-staged": {
+    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint"
+  }
+}

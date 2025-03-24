@@ -1,0 +1,402 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hacker News: Best Comments</title>
+        <link>https://news.ycombinator.com/bestcomments</link>
+        <description>Hacker News RSS</description>
+        <docs>https://hnrss.org/</docs>
+        <generator>hnrss v2.1.1</generator>
+        <lastBuildDate>Fri, 21 Mar 2025 04:18:27 +0000</lastBuildDate>
+        <atom:link href="https://hnrss.org/bestcomments" rel="self" type="application/rss+xml" />
+        <item>
+            <title>
+                <![CDATA[ New comment by stared in "The Burnout Machine" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Software engineering is one of the ways of playing life in "easy mode" (I moved from academia over a decade ago, and I know the difference). This blog post tries to paint it differently - and it feels like it lacks perspective compared to virtually any other occupation.<p>> We’re living in a world where billion dollar tech companies expect us to live and breathe code, demanding 80 hour weeks under the guise of "passion."<p>Yet, it is up to us. In some software jobs (AAA game dev and a certain type of startup), you are expected to crunch beyond limits. In other places, you can have a typical 40h/week job at a salary way better than the average 9-5 job. Or you can freelance a dozen hours a week and live in a remote cottage. Or work from Thailand when it's winter. Or take a gap year to regenerate, or reinvent, yourself.<p>Not many career choices support this freedom. In some (e.g., medical careers), grind is not optional—you won't finish university, you won't get established, and that's the end of the story. In many other jobs, if you were freelancing a dozen hours a week, you would literally not be able to afford food. In many professions, quitting means the end of a career - or at least a serious setback; in tech, it means getting many messages on LinkedIn.<p>Don't get me wrong - I am all for criticism of grind and exploitation. But let's not paint ourselves, members of one of the most privileged occupations, as victims of the global system.</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 21:03:07 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43428936</link>
+            <dc:creator>stared</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43428936</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43428936</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by Almondsetat in "Claude can now search the web" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>>looks at the top X hits and then interprets it to be the correct answer.<p>LLMs are truly reaching human-like behavior then</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 18:15:02 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43426861</link>
+            <dc:creator>Almondsetat</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43426861</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43426861</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by tcdent in "Claude can now search the web" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Searching the web is a great feature in theory, but every implementation I've used so far looks at the top X hits and then interprets it to be the correct answer.<p>When you're talking to an LLM about popular topics or common errors, the top results are often just blogspam or unresolved forum posts, so the you never get an answer to your problem.<p>More of an indicator that web search is more unusable than ever, but interesting that it affects the performance of generative systems, nonetheless.</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 18:07:09 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43426753</link>
+            <dc:creator>tcdent</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43426753</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43426753</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by ericholscher in "FOSS infrastructure is under attack by AI companies" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Yep -- our story here: <a href="https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/" rel="nofollow">https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse...</a> (quoted in the OP) -- everyone I know has a similar story who is running large internet infrastructure -- this post does a great job of rounding a bunch of them up in 1 place.<p>I called it when I wrote it, they are just burning their goodwill to the ground.<p>I will note that one of the main startups in the space worked with us directly, refunded our costs, and fixed the bug in their crawler. Facebook never replied to our emails, the link in their User Agent led to a 404 -- an engineer at the company saw our post and reached out, giving me the right email -- which I then emailed 3x and never got a reply.</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 13:05:31 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43422645</link>
+            <dc:creator>ericholscher</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43422645</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43422645</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by mplanchard in "The Frontend Treadmill" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>I have recently been doing some upgrades to the build system for our FE code to swap out yarn for pnpm. I’m normally a backend engineer, but I’ve spent plenty of time in the JS mines.<p>The most frustrating thing about dipping in to the FE is that it seems like <i>literally everything is deprecated</i>. Oh, you used the apollo CLI in 2022? Bam, deprecated, go learn how to use graphql-client or whatever, which has a totally different configuration and doesn’t support all the same options. Okay, so we just keep the old one and disable the node engine check in pnpm that makes it complain. Want to do a <i>patch</i> upgrade to some dependency? Hope you weren’t relying on any of its type signatures! Pin that as well, with a todo in the codebase hoping someone will update the signatures.<p>Finally get things running, watch the stream of hundreds of deprecation warnings fly by during the install. Eventually it builds, and I get the hell out of there.<p>It’s just nuts to me the degree to which FE development as a whole seems to embrace the breaking change, the deprecation, etc. I’ve been working on a large rust project for nearly four years and in that time there have been a few minor breaking changes in or of third party libraries, but only one major breaking change that required significant changes to our application. Meanwhile in JS it seems like you can’t go more than six months without having to rewrite <i>something</i>. It’s bananas.<p>Okay, rant over.</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 12:47:12 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43422368</link>
+            <dc:creator>mplanchard</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43422368</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43422368</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by deng in "The Pain That Is GitHub Actions" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Already see people saying GitLab is better: yes it is, but it also sucks in different ways.<p>After years of dealing with this (first Jenkins, then GitLab, then GitHub), my takeaway is:<p>* Write as much CI logic as possible in your own code. Does not really matter what you use (shell scripts, make, just, doit, mage, whatever) as long as it is proper, maintainable code.<p>* Invest time that your pipelines can run locally on a developer machine as well (as much as possible at least), otherwise testing/debugging pipelines becomes a nightmare.<p>* Avoid YAML as much as possible, period.<p>* Don't bind yourself to some fancy new VC-financed thing that will solve CI once and for all but needs to get monetized eventually (see: earthly, dagger, etc.)<p>* Always use your own runners, on-premise if possible</p> ]]>
+            </description>
+            <pubDate>Thu, 20 Mar 2025 06:47:52 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43420361</link>
+            <dc:creator>deng</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43420361</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43420361</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by its-kostya in "Two new PebbleOS watches" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Eric, thank you. Lurking in the forum answering questions evokes people to share their opinion for satisfaction and dissatisfaction and often neglectes to evoke praise (proportionally). I am guilty of this too.<p>So please have some well deserved praise for your work on this. We have gotten an open source wearable OS, purpose built hardware, R&D, a community, more pressure on Apple to be less of a gatekeeper, and something we can own in a crazy short timeframe. I hope you see this despite it being buried. Thank you, you glorious nerd.</p> ]]>
+            </description>
+            <pubDate>Tue, 18 Mar 2025 19:26:15 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43403838</link>
+            <dc:creator>its-kostya</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43403838</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43403838</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by chamanbuga in "Apple restricts Pebble from being awesome with iPhones" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>This is cap. I worked on heads up glasses, and one of our issues was the lack of integration with Apple's iMessage ecosystem. Device makers are willing to go through several security measures, like deploying the MFi chips and certification. However, at best this gives you access to the notification system, not iMessage itself. You are able to respond to messages via the notification framework, but not integrate directly with iMessage even after taking all security and certification efforts. This isn't a security play. This is a walled garden play.</p> ]]>
+            </description>
+            <pubDate>Tue, 18 Mar 2025 18:09:53 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43402691</link>
+            <dc:creator>chamanbuga</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43402691</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43402691</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by vessenes in "Apple restricts Pebble from being awesome with iPhones" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>I guess I’ll take the contra here on messages integration — moving a message over BLE to untrusted hardware and worse accepting them back into iMessage is a massive, massive change in the security boundary and therefore security architecture and therefore security promises that apple makes on iMessage.<p>I do not believe average smartwatch users understand what they’d be doing if they got this. I do not believe vendors integrating with such a thing can do it safely, or even that all vendors integrating are good actors.<p>One reason iMessage is less of a total cesspit than SMS is that the ecosystem is closed, and makes automation difficult. It used to be impossible nearly, and in that era we had almost no iMessage spam. Now it’s difficult, and we have moderate iMessage spam. But adding hooks to make this automation easy, and worse, leave the trust environment as a feature is just wrong.</p> ]]>
+            </description>
+            <pubDate>Tue, 18 Mar 2025 17:34:41 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43402210</link>
+            <dc:creator>vessenes</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43402210</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43402210</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by detourdog in "Google to buy Wiz for $32B" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>I never heard of them until they were purchased for $32 billion.</p> ]]>
+            </description>
+            <pubDate>Tue, 18 Mar 2025 17:03:14 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43401795</link>
+            <dc:creator>detourdog</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43401795</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43401795</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by Tarball10 in "Launching RDAP; sunsetting WHOIS" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>This is about sunsetting the WHOIS protocol in favor of RDAP, not doing away with domain owner registration data.</p> ]]>
+            </description>
+            <pubDate>Mon, 17 Mar 2025 01:40:18 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43384379</link>
+            <dc:creator>Tarball10</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43384379</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43384379</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by nchagnet in "Docs – Open source alternative to Notion or Outline" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>This is a really great project from both the French and German governments.<p>I think state-funded open source solutions to digital platforms is a fantastic opportunity to get away from the big tech walled gardens. Of course, there is always the risk that this becomes unmaintained in the future, but the community at least can take over. But until then, it's a nice platform and a nice contribution to the community.</p> ]]>
+            </description>
+            <pubDate>Sun, 16 Mar 2025 13:07:20 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43378748</link>
+            <dc:creator>nchagnet</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43378748</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43378748</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by thomassmith65 in "Google Being Forced to Sell Chrome Is Not Good for the Web" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p><p><pre><code> Google is a web business, that’s their whole thing. They made a browser to invest in the web itself because what is good for the web is good for Google, and happens to be good for all of us. </code></pre> This is a panglossian take that belongs in the year 2005.<p>Google is less a 'web business' than it is an 'advertising business', a 'surveillance business', and a 'finance business'.<p>Consequently, it is false that 'what is good for the web is good for Google'. AMP, and the Ad-blocking prohibition are evidence of this.</p> ]]>
+            </description>
+            <pubDate>Sat, 15 Mar 2025 02:48:03 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43369491</link>
+            <dc:creator>thomassmith65</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43369491</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43369491</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by jaggederest in "“Normal” engineers are the key to great teams" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>I like this article particularly because I think the trope that there's something unique and different about software engineering is pretty toxic, both to we people in the field and people looking to employ people in the field.<p>These days it feels a bit like another well known toxic field, finance, in that people conflate an outsized leverage for personal valor.<p>It's laudable to do your work well and go home to the rest of your life, and working "extreme" hours is both a bad policy and a bad sign that the system you're operating in is brittle. Nothing that we do is so unique that another competent engineer shouldn't be able to fill in for you when you are having an off day.<p>The effect of consistent, careful, workmanlike effort over time trumps any number of crunch weeks and burnout episodes, to an almost absurd degree.</p> ]]>
+            </description>
+            <pubDate>Thu, 13 Mar 2025 21:00:05 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43357184</link>
+            <dc:creator>jaggederest</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43357184</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43357184</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by svilen_dobrev in "OpenAI asks White House for relief from state AI rules" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>> ask for regulation then ask for exempt<p>That's exactly what has been happening:<p>Ask HN: Why is OpenAI pushing for regulation so much - 2023<p><a href="https://news.ycombinator.com/item?id=36045397">https://news.ycombinator.com/item?id=36045397</a></p> ]]>
+            </description>
+            <pubDate>Thu, 13 Mar 2025 17:46:41 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43355643</link>
+            <dc:creator>svilen_dobrev</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43355643</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43355643</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by pr337h4m in "OpenAI asks White House for relief from state AI rules" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>>Chris Lehane, OpenAI’s vice president of global affairs, said in an interview that the US AI Safety Institute – a key government group focused on AI – could act as the main point of contact between the federal government and the private sector. If companies work with the group voluntarily to review models, the government could provide them “with liability protections including preemption from state based regulations that focus on frontier model security,” according to the proposal.<p>Given OpenAI's history and relationship with the "AI safety" movement, I wouldn't be surprised to find out later that they also lobbied for the same proposed state-level regulations they're seeking relief from.</p> ]]>
+            </description>
+            <pubDate>Thu, 13 Mar 2025 16:41:40 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43354992</link>
+            <dc:creator>pr337h4m</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43354992</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43354992</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by kstrauser in "Mark Klein, AT&T whistleblower who revealed NSA mass spying, has died" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Nooooooo! He was my next door neighbor a few years ago, and I knew him as a person before I realized that I knew him as a hero.<p>His dogs were fiercely protective of his house, which is perfectly understandable. One day I saw a "sewer cleaning" van behind his house, and I have a hard time believing that's what it really was: <a href="https://honeypot.net/2025/03/12/rip-mark-klein.html" rel="nofollow">https://honeypot.net/2025/03/12/rip-mark-klein.html</a></p> ]]>
+            </description>
+            <pubDate>Wed, 12 Mar 2025 21:44:44 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43347970</link>
+            <dc:creator>kstrauser</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43347970</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43347970</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by DanRosenwasser in "A 10x Faster TypeScript" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Hi folks, Daniel Rosenwasser from the TypeScript team here. We're obviously very excited to announce this! RyanCavanaugh (our dev lead) and I are around to answer any quick questions you might have. You can also tune in to the Discord AMA mentioned in the blog this upcoming Thursday.</p> ]]>
+            </description>
+            <pubDate>Tue, 11 Mar 2025 14:39:39 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43332903</link>
+            <dc:creator>DanRosenwasser</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43332903</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43332903</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by bearjaws in "uBlock Origin is no longer available on the Chrome Store" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Nobody could have possibly seen it coming that Google would abuse its market position to their own benefit...<p>I migrated off Chrome as soon as this BS story about improving privacy, a joke coming from Google. Then the excuse was "well it improves performance", which they could easily do by marking extensions as low performance.<p>If Google wanted to improve this they have an entire search engine where they could re-rank sites based on privacy and performance.<p>It was never about improving peoples web experience.</p> ]]>
+            </description>
+            <pubDate>Mon, 10 Mar 2025 17:41:27 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43323079</link>
+            <dc:creator>bearjaws</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43323079</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43323079</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by DannyBee in "Music labels will regret coming for the Internet Archive, sound historian says" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>They clarify they mean they think they will regret it historically in the sense of losing that part of history, rather than monetarily, etc.<p>But to me this is like arguing a swarm of locusts are going to one day regret that they destroyed so many fields of crops.</p> ]]>
+            </description>
+            <pubDate>Mon, 10 Mar 2025 16:48:59 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43322433</link>
+            <dc:creator>DannyBee</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43322433</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43322433</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by kenjin4096 in "Performance of the Python 3.14 tail-call interpreter" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Hello. I'm the author of the PR that landed the tail-calling interpreter in CPython.<p>First, I want to say thank you to Nelson for spending almost a month to get to the root of this issue.<p>Secondly, I want to say I'm extremely embarrassed and sorry that I made such a huge oversight. I, and probably the rest of the CPython team did not expect the compiler we were using for the baseline to have that bug.<p>I posted an apology blog post here. <a href="https://fidget-spinner.github.io/posts/apology-tail-call.html" rel="nofollow">https://fidget-spinner.github.io/posts/apology-tail-call.htm...</a></p> ]]>
+            </description>
+            <pubDate>Mon, 10 Mar 2025 11:42:19 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43319441</link>
+            <dc:creator>kenjin4096</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43319441</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43319441</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by verandaguy in "US Ends Support For Ukrainian F-16s" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>The myth of how much harm "leftists" can do/are doing in the US is probably what got you all here. It's another McCarthyist boogeyman, and it's not even being sold well -- a lot of the marketing's just outright lies, and people are eating that up.</p> ]]>
+            </description>
+            <pubDate>Sun, 09 Mar 2025 15:32:21 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43309952</link>
+            <dc:creator>verandaguy</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43309952</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43309952</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by lucasyvas in "US Ends Support For Ukrainian F-16s" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>I find some of the comments I’ve read today in this thread somewhat enlightening - there is intelligent conversation about the capabilities of the American hardware and its software.<p>The sophistication of the F-35 cannot be debated. But the rest of the world doesn’t trust the US anymore, so it doesn’t matter how good it is - people would gladly explore a worse product because they see it as lower risk.<p>That’s the reality of where America is at the moment. There are many Americans on Hacker News (if not the majority) and naturally the merits of the product that America produces are being discussed, and its superiority is front and center.<p>This viewpoint is not relevant to the rest of the world. We don’t want the US’ stuff anymore and the only thing that can save that relationship is full software control. If America wants to make sales it needs to adjust to that expectation, or buyers are going elsewhere.<p>The argument is missing the forest for the trees - the relationship is more important than the product itself. The sooner that is acknowledged the more likely a political course correction is possible. Otherwise, sure, you might see a few short term F-35 sales conclude. But the purchasing will stop as soon as it can.</p> ]]>
+            </description>
+            <pubDate>Sun, 09 Mar 2025 15:31:42 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43309940</link>
+            <dc:creator>lucasyvas</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43309940</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43309940</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by ta988 in "US Ends Support For Ukrainian F-16s" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>And the story continues. This means that no country will want to buy F16s. If you don't get support they are useless. They are eroding really fast the US shine and trust in the world. This is going to have a massive effect on the US economy, internal consumption will not save it. This is the end of an empire while its rich kings are golfing every weekend on the taxpayer dime using federal and local resources.<p>I am really amazed there are still almost half of the people able to twist reality to defend what is a direct attack against their own personal interests (they have proven already that other's interests do not matter for them). This sounds like self-flagellation seen from the outside.</p> ]]>
+            </description>
+            <pubDate>Sun, 09 Mar 2025 15:08:03 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43309663</link>
+            <dc:creator>ta988</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43309663</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43309663</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by rich_sasha in "US Ends Support For Ukrainian F-16s" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Right now every buyer of American kit is feverishly evaluating non-US alternatives.<p>Seriously, America, this is like Brexit but 1000x. A voluntary decision, taken with gusto, to chop off arms and legs and ears and fingers and whatnot, cut off the deadwood, be light and free, a lone vessel on the ocean of prosperity, free of the burden of the stupid foreigners who are the sole reason why everything was going wrong.</p> ]]>
+            </description>
+            <pubDate>Sun, 09 Mar 2025 11:28:24 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43308102</link>
+            <dc:creator>rich_sasha</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43308102</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43308102</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by lolinder in "Kill your Feeds – Stop letting algorithms dictate what you think" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>The author sort of (but not really) acknowledges this midway through, but this is basically a summary of the most recent Technology Connections video, <i>Algorithms are breaking how we think</i>:<p><a href="https://youtu.be/QEJpZjg8GuA" rel="nofollow">https://youtu.be/QEJpZjg8GuA</a><p>I'd rather they acknowledge Alec as the inspiration/source for this post at the beginning and explicitly, rather than just mentioning the video in passing midway through, but at least they do link to it!</p> ]]>
+            </description>
+            <pubDate>Sat, 08 Mar 2025 18:39:47 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43302365</link>
+            <dc:creator>lolinder</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43302365</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43302365</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by crazygringo in "AI tools are spotting errors in research papers" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>This actually feels like an amazing step in the right direction.<p>If AI can help spot obvious errors in published papers, it can do it as part of the review process. And if it can do it as part of the review process, authors can run it on their own work before submitting. It could massively raise the quality level of a lot of papers.<p>What's important here is that it's part of a process involving experts themselves -- the authors, the peer reviewers. They can easily dismiss false positives, but especially get warnings about statistical mistakes or other aspects of the paper that aren't their primary area of expertise but can contain gotchas.</p> ]]>
+            </description>
+            <pubDate>Sat, 08 Mar 2025 15:27:10 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43300932</link>
+            <dc:creator>crazygringo</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43300932</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43300932</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by celsius1414 in "Athena spacecraft declared dead after toppling over on moon" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>You are likely aware of the English language's feature of multiple adjectives (that are modifying the same noun) needing to appear in a certain order to sound "correct". So for example "yellow big balloon" sounds wrong but "big yellow balloon" sounds right. This is because SIZE is supposed to come before COLOR in standard English phrases.<p>In this case, "robotic" and "private" could be similar enough in category to be confusing. In the Order of Adjectives[0], "robotic" is in the TYPE category, near the bottom of the list, and "private" seems to fit in that same category at first glance. By that interpretation, either "robotic private" or "private robotic" works.<p>What if instead of "private" it said "Californian"? That would make it an ORIGIN, and "Californian robotic spacecraft" becomes the obvious choice — otherwise, you'd think they were talking about a spacecraft belonging to robots from California. ;)<p>So if we interpret "private" as an ORIGIN, your "private robotic spacecraft" sounds better. That would have been my choice as well.<p>[0]: <a href="https://dictionary.cambridge.org/grammar/british-grammar/adjectives-order" rel="nofollow">https://dictionary.cambridge.org/grammar/british-grammar/adj...</a></p> ]]>
+            </description>
+            <pubDate>Fri, 07 Mar 2025 20:43:08 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43294388</link>
+            <dc:creator>celsius1414</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43294388</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43294388</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by thom in "Natural occurring molecule rivals Ozempic in weight loss, sidesteps side effects" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>Delighted to discover this kind of breakthrough is based on a gnarly regular expression:<p><a href="https://github.com/Svensson-Lab/pro-hormone-predictor/blob/main/FastaParser.py#L32">https://github.com/Svensson-Lab/pro-hormone-predictor/blob/m...</a></p> ]]>
+            </description>
+            <pubDate>Fri, 07 Mar 2025 11:42:31 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43289382</link>
+            <dc:creator>thom</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43289382</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43289382</guid>
+        </item>
+        <item>
+            <title>
+                <![CDATA[ New comment by semireg in "Age and cognitive skills: Use it or lose it" ]]>
+            </title>
+            <description>
+                <![CDATA[ <p>This is sweet news. I'm over 40. I enrolled at my local university in January and I'm studying (literally right now) for my linear algebra midterm [0] which is in 45 minutes! I'm on HN to calm my nerves.<p>I graduated high school in the early 2000s and graduated college with major in computer science and a minor in math. My goal is 5-8 more classes for a second degree in math (major).<p>Wish me luck!<p>[0] Study guide: <a href="https://course1.winona.edu/bperatt/M311S25/Tests/Test%202/test2sg.pdf" rel="nofollow">https://course1.winona.edu/bperatt/M311S25/Tests/Test%202/te...</a> Course: <a href="https://course1.winona.edu/bperatt/M311S25/Administrative/M311S25.html" rel="nofollow">https://course1.winona.edu/bperatt/M311S25/Administrative/M3...</a></p> ]]>
+            </description>
+            <pubDate>Thu, 06 Mar 2025 15:15:06 +0000</pubDate>
+            <link>https://news.ycombinator.com/item?id=43281166</link>
+            <dc:creator>semireg</dc:creator>
+            <comments>https://news.ycombinator.com/item?id=43281166</comments>
+            <guid isPermaLink="false">https://news.ycombinator.com/item?id=43281166</guid>
+        </item>
+    </channel>
+</rss>
