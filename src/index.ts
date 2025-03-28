@@ -3,7 +3,7 @@ import { Cache } from './util/cache';
 import { createLogger } from './util/logger';
 import { logger as honoLogger } from 'hono/logger'
 import { MultiFeedService } from './feed/multi-feed-service';
-
+import * as Sentry from "@sentry/cloudflare";
 
 interface FeedConfig {
   name: string;
@@ -175,4 +175,9 @@ app.delete('/api/clearcache', async (c) => {
   }
 });
 
-export default app
+export default Sentry.withSentry(
+  (env) => ({
+    dsn: "https://7fabbec3bf25287945779a6b233fd914@o4509054520852480.ingest.us.sentry.io/4509054555979776",
+  }),
+  app
+);

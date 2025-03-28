@@ -10,6 +10,7 @@
   "dependencies": {
     "@ai-sdk/cohere": "^1.2.0",
     "@ai-sdk/mistral": "^1.1.18",
+    "@sentry/cloudflare": "^9.10.0",
     "@types/debug": "^4.1.12",
     "ai": "^4.1.63",
     "fast-xml-parser": "^5.0.9",

@@ -6,6 +6,7 @@
       "dependencies": {
         "@ai-sdk/cohere": "^1.2.0",
         "@ai-sdk/mistral": "^1.1.18",
+        "@sentry/cloudflare": "^9.10.0",
         "@types/debug": "^4.1.12",
         "ai": "^4.1.63",
         "fast-xml-parser": "^5.0.9",
@@ -166,6 +167,10 @@
     "@oxlint/win32-arm64": ["@oxlint/win32-arm64@0.16.2", "https://registry.npmmirror.com/@oxlint/win32-arm64/-/win32-arm64-0.16.2.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-hQdLq4Wvcfc9Yyks0inevfAMQL96j3WU6tibSEVD06tIiv2VsdIiMLXVAC+dDGc2ISfB+OqF4E4Uq4l4YCTcgw=="],
 
     "@oxlint/win32-x64": ["@oxlint/win32-x64@0.16.2", "https://registry.npmmirror.com/@oxlint/win32-x64/-/win32-x64-0.16.2.tgz", { "os": "win32", "cpu": "x64" }, "sha512-6Y0S7SXAo2QaApt1jQcNriTs/d5HcI6DQfCOOPRSEr6l9g8Pmsl6yhhgNwlKeAwh7/5aI5+c4R9EmOk3OEKvMQ=="],
+
+    "@sentry/cloudflare": ["@sentry/cloudflare@9.10.0", "https://registry.npmmirror.com/@sentry/cloudflare/-/cloudflare-9.10.0.tgz", { "dependencies": { "@sentry/core": "9.10.0" }, "peerDependencies": { "@cloudflare/workers-types": "^4.x" }, "optionalPeers": ["@cloudflare/workers-types"] }, "sha512-hZ+FiiYQ9nTnzLpunE3HmW2V80+H27+16bsKXkBl6E7wEgUzbGrWjXhOazmm/l0OESE5flnESBY7ust2aGlGcQ=="],
+
+    "@sentry/core": ["@sentry/core@9.10.0", "https://registry.npmmirror.com/@sentry/core/-/core-9.10.0.tgz", {}, "sha512-l3U/dOj9R2jcSLrSfPVkU7v6EUaEH7jgPYYyR+ug61oeSZ1/i/mgD2BpGk5FJd1e5mXCuNVmeFxirwCUZF3+ZA=="],
 
     "@types/debug": ["@types/debug@4.1.12", "https://registry.npmmirror.com/@types/debug/-/debug-4.1.12.tgz", { "dependencies": { "@types/ms": "*" } }, "sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ=="],
 

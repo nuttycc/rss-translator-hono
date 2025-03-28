@@ -3,6 +3,7 @@
   "name": "rss-translator-hono",
   "main": "src/index.ts",
   "compatibility_date": "2025-03-17",
+  "compatibility_flags": ["nodejs_compat"],
   "routes": [
     {
       "pattern": "rss.bingsun.xyz",
