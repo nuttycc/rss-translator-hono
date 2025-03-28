@@ -1,5 +1,6 @@
 import { XMLBuilder, XMLParser } from "fast-xml-parser";
-import { getTranslation } from "./ai";
+// import { getTranslation } from "./ai";
+import { getTranslation } from "./openrouter";
 import { createLogger } from "../util/logger";
 
 const logger = createLogger('[Translator]');

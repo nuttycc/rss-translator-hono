@@ -18,8 +18,8 @@
     "dev": {
       "vars": {
         "ENVIRONMENT": "dev",
-        "PROVIDER": "mistral",
-        "MODEL": "mistral-small-latest"
+        "PROVIDER": "openrouter",
+        "MODEL": "deepseek/deepseek-chat-v3-0324:free"
       },
       "kv_namespaces": [
         {

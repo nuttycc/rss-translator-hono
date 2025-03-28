@@ -1,26 +1,29 @@
+import { createLogger } from '../util/logger';
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  baseURL: 'https://openrouter.ai/api/v1',
-  apiKey: '<OPENROUTER_API_KEY>',
-  defaultHeaders: {
-    'HTTP-Referer': '<YOUR_SITE_URL>', // Optional. Site URL for rankings on openrouter.ai.
-    'X-Title': '<YOUR_SITE_NAME>', // Optional. Site title for rankings on openrouter.ai.
-  },
-});
+const logger = createLogger('[OpenRouter]');
 
-async function main() {
-  const completion = await openai.chat.completions.create({
-    model: 'openai/gpt-4o',
-    messages: [
-      {
-        role: 'user',
-        content: 'What is the meaning of life?',
-      },
-    ],
+export async function getTranslation(array: string[], provider: string, model: string, apiKey: string) {
+  const openai = new OpenAI({
+    baseURL: 'https://openrouter.ai/api/v1',
+    apiKey: apiKey,
   });
 
-  console.log(completion.choices[0].message);
+  try {
+    const completion = await openai.chat.completions.create({
+      model: model,
+      messages: [
+        {
+          role: 'user',
+          content: `Translate the following titles to Chinese, Respond with an array of strings(JSON): ${JSON.stringify(array)}`,
+        },
+      ],
+    });
+  
+    logger.debug('Translation response:', completion.choices[0].message.content);
+    return completion.choices[0].message.content ?? [];
+  } catch (error) {
+    logger.error('Error getting translation:', error);
+    throw error;
+  }
 }
-
-main();
